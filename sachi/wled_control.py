@@ -47,7 +47,7 @@ async def set_leds(colors: List[Color], color_indices: List[int]) -> None:
         brightness = 0 if color_index == 0 else 255
         ip, segment = get_ip_and_segment(led_index)
         try:
-            async with WLED(ip) as wled:
+            async with WLED(ip, request_timeout=0.5) as wled:
                 try:
                     print(f"Seting {ip} {segment} {brightness} {colors[color_index - 1]}")
                     await wled.segment(segment, brightness=brightness, color_primary=colors[color_index - 1].to_tuple())
