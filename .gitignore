@@ -1,6 +1,5 @@
 .mypy_cache/
 .pytest_cache/
 .vscode/
-.web/
 **.pyc
 **.db
