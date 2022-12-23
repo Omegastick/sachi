@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "sachi"
+version = "0.1.0"
+description = "Web UI for controlling a kilter board thing"
+authors = ["Omegastick <isaac@poulton.dev>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+wled = "^0.14.1"
+pynecone-io = "^0.1.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
